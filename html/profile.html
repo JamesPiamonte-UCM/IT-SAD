@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Settings - OneTask</title>
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🟠 OneTask</div>
+    <nav class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="addtask.html">Add/Edit Task</a>
+      <a href="aboutus.html">About</a>
+      <a href="#" id="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Profile Settings Form -->
+  <main class="profile-container">
+    <h2>Profile Settings</h2>
+    <form id="profile-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter new password">
+
+      <label for="avatar">Profile Picture:</label>
+      <input type="file" id="avatar" accept="image/*">
+
+      <div class="preview">
+        <img id="avatar-preview" src="" alt="Profile Preview">
+      </div>
+
+      <button type="submit">Save Changes</button>
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">🟠 OneTask</div>
+    <div class="social-links">
+      <a href="#">🔗</a>
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+    </div>
+  </footer>
+
+  <script src="../js/profile.js"></script>
+</body>
+</html>

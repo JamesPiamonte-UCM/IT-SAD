@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneTask Dashboard</title>
+    <link rel="stylesheet" href="../css/home.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🟠 OneTask</div>
+        <nav class="nav-links">
+            <a href="addtask.html">Add New Task</a>
+            <a href="profile.html">Profile Settings</a>
+            <a href="aboutus.html">About</a>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <h2>Home</h2>
+        <h2>Hello <span id="user-name">Name of User</span></h2>
+        <p class="reminder-text">I hope you didn’t forget something</p>
+    </section>
+
+    <main class="main-container">
+
+        <div class="calendar">
+            <h3 id="calendar-day"></h3>
+            <p id="calendar-date"></p>
+            <div id="mini-calendar" class="mini-calendar"></div>
+        </div>
+
+        <div class="tasks-container">
+            <button class="load-more">Load more</button>
+        </div>
+
+        <div id="add-task-section"></div>
+
+    </main>
+
+    <section class="stats">
+        <div class="stat-completedtask">Completed Tasks<br><strong></strong></div>
+        <div class="stat-pendingtask">Pending Tasks<br><strong></strong></div>
+        <div class="stat-taskcreated">Tasks Created<br><strong></strong></div>
+        <div class="stat-box">25k+ Active Users<br>👤👤👤👤👤</div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">🟠 OneTask</div>
+        <div class="social-links">
+            <a href="#">🔗</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+        </div>
+    </footer>
+
+    <script src="../js/calendar.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

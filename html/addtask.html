@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneTask Dashboard</title>
+    <link rel="stylesheet" href="../css/addtask.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">🟠 OneTask</div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile Settings</a>
+            <a href="aboutus.html">About</a>
+        </nav>
+    </header>
+
+    <!-- WELCOME -->
+    <section class="welcome-section">
+        <h2>Add Task</h2>
+        <h2>Hello <span id="user-name">Name of User</span></h2>
+        <p class="reminder-text">I hope you didn’t forget something</p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+
+        <!-- Calendar -->
+        <div class="calendar">
+            <h3 id="calendar-day"></h3>
+            <p id="calendar-date"></p>
+            <div id="mini-calendar" class="mini-calendar"></div>
+        </div>
+
+        <!-- TASK CONTAINER -->
+        <div class="tasks-container">
+
+            <!-- Add Task Section -->
+            <div class="task-input-section">
+                <input type="text" id="taskInput" placeholder="Enter task here">
+                <select id="taskPriority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list" id="taskList"></div>
+        </div>
+
+    </main>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat-completedtask">Completed Tasks<br><strong></strong></div>
+        <div class="stat-pendingtask">Pending<br><strong></strong></div>
+        <div class="stat-taskcreated">Tasks Created<br><strong></strong></div>
+        <div class="stat-box">25k+ Active Users<br>👤👤👤👤👤</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">🟠 OneTask</div>
+        <div class="social-links">
+            <a href="#">🔗</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+        </div>
+    </footer>
+
+    <!-- JS FILES -->
+    <script src="../js/calendar.js"></script>
+    <script src="../js/addtask.js"></script>
+
+</body>
+</html>
