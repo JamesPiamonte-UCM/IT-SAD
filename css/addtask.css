@@ -1,0 +1,248 @@
+/* ==========================
+   GLOBAL
+========================== */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    background: #FFF7E8;
+    color: #333;
+}
+
+/* ==========================
+   HEADER
+========================== */
+.header {
+    background: #E39A27;
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* ==========================
+   WELCOME SECTION
+========================== */
+.welcome-section {
+    padding: 25px 35px;
+}
+
+.reminder-text {
+    font-size: 1.2rem;
+    margin-top: -8px;
+    color: #5b4636;
+}
+
+/* ==========================
+   MAIN LAYOUT
+========================== */
+.main-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 35px;
+}
+
+/* ==========================
+   CALENDAR
+========================== */
+.calendar {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    width: 30%;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.mini-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.mini-calendar div {
+    padding: 9px;
+    border-radius: 6px;
+    background: #f0e3d6;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.mini-calendar div:hover {
+    background: #e3d2c1;
+}
+
+.mini-calendar .today {
+    background: #E39A27;
+    color: white;
+    font-weight: bold;
+}
+
+.mini-calendar .empty {
+    background: transparent;
+    cursor: default;
+}
+
+/* ==========================
+   TASK LIST PANEL
+========================== */
+.tasks-container {
+    width: 70%;
+}
+
+/* ==========================
+   TASK CARD
+========================== */
+.task-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.15s ease-in-out;
+    border-left: 6px solid #e0b996;
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Completed */
+.task-card.completed {
+    background: #f3e5d2;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+/* ==========================
+   TASK HEADER
+========================== */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    flex: 1;
+    color: #3c2e22;
+}
+
+.task-date {
+    font-size: 0.75rem;
+    color: #7a6a58;
+}
+
+/* ==========================
+   PRIORITY TAGS
+========================== */
+.task-priority {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.priority-low { background: #4caf50; }
+.priority-medium { background: #ff9800; }
+.priority-high { background: #f44336; }
+
+/* ==========================
+   TASK BUTTONS
+========================== */
+.task-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.task-actions button {
+    padding: 7px 11px;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+/* Button colors */
+.done-btn { background: #4caf50; color: #fff; }
+.done-btn:hover { background: #45a145; }
+
+.edit-btn { background: #2196f3; color: #fff; }
+.edit-btn:hover { background: #1b7ccc; }
+
+.delete-btn { background: #f44336; color: #fff; }
+.delete-btn:hover { background: #d9372b; }
+
+/* ==========================
+   STAT BOXES
+========================== */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 35px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stat-box {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5b4636;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    background: #E39A27;
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+.social-links a {
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.2s;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}

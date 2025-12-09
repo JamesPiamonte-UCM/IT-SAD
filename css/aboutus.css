@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff0d6;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px; /* space for footer */
+}
+
+/* --- About & How-to-use font --- */
+.about-box p, 
+.how-to-use-section li {
+    font-family: 'Comic Sans MS', cursive, 'Brush Script MT', 'Lucida Handwriting', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #E39A27;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-size: 0.85em;
+}
+
+/* --- Main Content --- */
+.content {
+    max-width: 1000px;  /* Desktop-friendly max width */
+    margin: 0 auto;
+    padding: 25px 5%;
+}
+
+/* About Section */
+.about-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    background-color: #FFF0E0;
+    border: 1px solid #FFE5CC;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* How To Use Section */
+.how-to-use-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Ordered List (Steps 1-4) */
+.how-to-use-section ol {
+    padding-left: 0;
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.how-to-use-section ol li {
+    counter-increment: my-counter;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 35px; /* space for custom number */
+}
+
+/* Custom Numbering Style */
+.how-to-use-section ol li::before {
+    content: counter(my-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1.1em;
+}
+
+/* Bold text inside the list items */
+.how-to-use-section ol li strong {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-underline-offset: 2px;
+}
+
+/* Unordered Lists (Sub-steps) */
+.how-to-use-section ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 8px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.how-to-use-section ul li {
+    padding-left: 0;
+    margin-bottom: 8px;
+}
+
+.how-to-use-section ul li::before {
+    content: none;
+}
+
+/* --- Footer --- */
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    border-top: 1px solid #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #E39A27;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .content {
+        padding: 25px 5%;
+    }
+
+    .about-section h1 {
+        font-size: 1.7em;
+    }
+
+    .how-to-use-section h2 {
+        font-size: 1.5em;
+    }
+
+    .how-to-use-section ol li {
+        padding-left: 25px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
+    }
+
+    .footer .social-links {
+        margin-top: 10px;
+    }
+}
+

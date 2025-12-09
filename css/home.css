@@ -1,0 +1,205 @@
+/* ==========================
+   GLOBAL
+========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #FFF7E8;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ==========================
+   HEADER
+========================== */
+.header {
+    background: #E39A27;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* ==========================
+   WELCOME SECTION
+========================== */
+.welcome-section {
+    padding: 20px 30px;
+}
+
+.reminder-text {
+    font-size: 1.2rem;
+    margin-top: -8px;
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+.main-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px;
+}
+
+/* ==========================
+   CALENDAR
+========================== */
+.calendar {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    width: 30%;
+    font-size: 0.9rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Mini calendar */
+.mini-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.mini-calendar div {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f0e3d6;
+    transition: background 0.15s ease;
+}
+
+.mini-calendar div:hover {
+    background: #e8d7c5;
+}
+
+.mini-calendar .today {
+    background: #E39A27;
+    color: white;
+    font-weight: bold;
+}
+
+.mini-calendar .empty {
+    background: transparent;
+    cursor: default;
+}
+
+/* ==========================
+   TASK LIST
+========================== */
+.tasks-container {
+    width: 70%;
+}
+
+/* Task cards (home view) */
+.task-card {
+    background: #D7BAA3;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: default;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.task-card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Task header */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.task-priority {
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Priority colors */
+.priority-low {
+    background-color: #6EC06E;
+}
+.priority-medium {
+    background-color: #F0A500;
+}
+.priority-high {
+    background-color: #E63946;
+}
+
+/* Hide action buttons */
+.task-actions {
+    display: none;
+}
+
+/* ==========================
+   STATS
+========================== */
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.stat-box {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    background: #E39A27;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 6px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+/* ==========================
+   RESPONSIVE   
